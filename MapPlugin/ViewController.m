@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "MyLocation.h"
 #import "Waypoint.h"
+#import "LocationDetailControllerViewController.h"
 
 
 @interface ViewController ()
@@ -150,6 +151,12 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl*)control
 {
     NSLog(@"calloutAccessoryControlTapped");
+    LocationDetailControllerViewController *locationDetailController = [[[LocationDetailControllerViewController alloc]initWithNibName:@"LocationDetailControllerViewController" bundle:nil]autorelease];
+    NSLog(@"%@",[view.annotation title]);
+    locationDetailController.titleString = [view.annotation title];
+    locationDetailController.subtitleString = [view.annotation subtitle];
+    [self addChildViewController:locationDetailController];
+    [self.view addSubview:locationDetailController.view];
 }
 
 - (NSMutableArray *) decodePolyline:(NSString *)encodedPoints {

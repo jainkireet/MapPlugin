@@ -15,6 +15,7 @@
     NSLog(@"inside MapPlugin");
     ViewController *mapViewController = [[ViewController alloc]initWithNibName:@"MapView" bundle:nil];
     [mapViewController setArray:arguments];
+    [self.viewController addChildViewController:mapViewController];
     [self.viewController.view addSubview:mapViewController.view];
 }  
 

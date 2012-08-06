@@ -44,6 +44,9 @@
 		CCC913D515CBFC6A002CE59E /* Waypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC913D015CBFC6A002CE59E /* Waypoint.m */; };
 		CCC913D815CBFE04002CE59E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC913D615CBFDD9002CE59E /* MapKit.framework */; };
 		CCD921A315CF99C100AB702B /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD921A215CF99C100AB702B /* MapView.xib */; };
+		CCD921A815CFEB1E00AB702B /* LocationDetailControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD921A615CFEB1E00AB702B /* LocationDetailControllerViewController.m */; };
+		CCD921A915CFEB1E00AB702B /* LocationDetailControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD921A715CFEB1E00AB702B /* LocationDetailControllerViewController.xib */; };
+		CCD921AD15CFF24100AB702B /* building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCD921AC15CFF24100AB702B /* building.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +98,10 @@
 		CCC913D015CBFC6A002CE59E /* Waypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waypoint.m; sourceTree = "<group>"; };
 		CCC913D615CBFDD9002CE59E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CCD921A215CF99C100AB702B /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		CCD921A515CFEB1E00AB702B /* LocationDetailControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationDetailControllerViewController.h; path = Plugins/LocationDetailControllerViewController.h; sourceTree = "<group>"; };
+		CCD921A615CFEB1E00AB702B /* LocationDetailControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationDetailControllerViewController.m; path = Plugins/LocationDetailControllerViewController.m; sourceTree = "<group>"; };
+		CCD921A715CFEB1E00AB702B /* LocationDetailControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationDetailControllerViewController.xib; path = Plugins/LocationDetailControllerViewController.xib; sourceTree = "<group>"; };
+		CCD921AC15CFF24100AB702B /* building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = building.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +291,10 @@
 				CCC913C615CBDC2D002CE59E /* MapPlugin.h */,
 				CCC913C715CBDC2D002CE59E /* MapPlugin.m */,
 				CCD921A215CF99C100AB702B /* MapView.xib */,
+				CCD921A515CFEB1E00AB702B /* LocationDetailControllerViewController.h */,
+				CCD921A615CFEB1E00AB702B /* LocationDetailControllerViewController.m */,
+				CCD921A715CFEB1E00AB702B /* LocationDetailControllerViewController.xib */,
+				CCD921AC15CFF24100AB702B /* building.jpg */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -360,6 +371,8 @@
 				CCC913BB15CBDB76002CE59E /* MainViewController.xib in Resources */,
 				CCC913C515CBDBCF002CE59E /* www in Resources */,
 				CCD921A315CF99C100AB702B /* MapView.xib in Resources */,
+				CCD921A915CFEB1E00AB702B /* LocationDetailControllerViewController.xib in Resources */,
+				CCD921AD15CFF24100AB702B /* building.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +406,7 @@
 				CCC913D315CBFC6A002CE59E /* ViewController.m in Sources */,
 				CCC913D415CBFC6A002CE59E /* MyLocation.m in Sources */,
 				CCC913D515CBFC6A002CE59E /* Waypoint.m in Sources */,
+				CCD921A815CFEB1E00AB702B /* LocationDetailControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
