@@ -37,6 +37,13 @@
 		CCC913B615CBDB75002CE59E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC913B515CBDB75002CE59E /* AppDelegate.m */; };
 		CCC913B915CBDB76002CE59E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC913B815CBDB76002CE59E /* MainViewController.m */; };
 		CCC913BB15CBDB76002CE59E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC913BA15CBDB76002CE59E /* MainViewController.xib */; };
+		CCC913C515CBDBCF002CE59E /* www in Resources */ = {isa = PBXBuildFile; fileRef = CCC913C415CBDBCF002CE59E /* www */; };
+		CCC913C815CBDC2D002CE59E /* MapPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC913C715CBDC2D002CE59E /* MapPlugin.m */; };
+		CCC913D315CBFC6A002CE59E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC913CC15CBFC6A002CE59E /* ViewController.m */; };
+		CCC913D415CBFC6A002CE59E /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC913CE15CBFC6A002CE59E /* MyLocation.m */; };
+		CCC913D515CBFC6A002CE59E /* Waypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC913D015CBFC6A002CE59E /* Waypoint.m */; };
+		CCC913D815CBFE04002CE59E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC913D615CBFDD9002CE59E /* MapKit.framework */; };
+		CCD921A315CF99C100AB702B /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD921A215CF99C100AB702B /* MapView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,10 +61,10 @@
 		CCC9138115CBDB75002CE59E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CCC9138315CBDB75002CE59E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		CCC9138515CBDB75002CE59E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		CCC9138915CBDB75002CE59E /* MapPlugin-Info.plist */ = {isa = PBXFileReference; path = "MapPlugin-Info.plist"; sourceTree = "<group>"; };
+		CCC9138915CBDB75002CE59E /* MapPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapPlugin-Info.plist"; sourceTree = "<group>"; };
 		CCC9138B15CBDB75002CE59E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CCC9138D15CBDB75002CE59E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CCC9138F15CBDB75002CE59E /* MapPlugin-Prefix.pch */ = {isa = PBXFileReference; path = "MapPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		CCC9138F15CBDB75002CE59E /* MapPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapPlugin-Prefix.pch"; sourceTree = "<group>"; };
 		CCC9139015CBDB75002CE59E /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
 		CCC9139515CBDB75002CE59E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CCC9139915CBDB75002CE59E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -70,13 +77,24 @@
 		CCC913AD15CBDB75002CE59E /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~iphone.png"; path = "Resources/splash/Default@2x~iphone.png"; sourceTree = "<group>"; };
 		CCC913AF15CBDB75002CE59E /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		CCC913B115CBDB75002CE59E /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
-		CCC913B415CBDB75002CE59E /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		CCC913B415CBDB75002CE59E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		CCC913B515CBDB75002CE59E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		CCC913B715CBDB75002CE59E /* MainViewController.h */ = {isa = PBXFileReference; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		CCC913B715CBDB75002CE59E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		CCC913B815CBDB76002CE59E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		CCC913BA15CBDB76002CE59E /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
-		CCC913BD15CBDB76002CE59E /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
-		CCC913BE15CBDB76002CE59E /* verify.sh */ = {isa = PBXFileReference; path = verify.sh; sourceTree = "<group>"; };
+		CCC913BD15CBDB76002CE59E /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		CCC913BE15CBDB76002CE59E /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		CCC913C415CBDBCF002CE59E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		CCC913C615CBDC2D002CE59E /* MapPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlugin.h; sourceTree = "<group>"; };
+		CCC913C715CBDC2D002CE59E /* MapPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPlugin.m; sourceTree = "<group>"; };
+		CCC913CB15CBFC6A002CE59E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCC913CC15CBFC6A002CE59E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCC913CD15CBFC6A002CE59E /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
+		CCC913CE15CBFC6A002CE59E /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
+		CCC913CF15CBFC6A002CE59E /* Waypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waypoint.h; sourceTree = "<group>"; };
+		CCC913D015CBFC6A002CE59E /* Waypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waypoint.m; sourceTree = "<group>"; };
+		CCC913D615CBFDD9002CE59E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CCD921A215CF99C100AB702B /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC913D815CBFE04002CE59E /* MapKit.framework in Frameworks */,
 				CCC9136E15CBDB75002CE59E /* Foundation.framework in Frameworks */,
 				CCC9137015CBDB75002CE59E /* UIKit.framework in Frameworks */,
 				CCC9137215CBDB75002CE59E /* CoreGraphics.framework in Frameworks */,
@@ -114,6 +133,7 @@
 		CCC9135B15CBDB75002CE59E = {
 			isa = PBXGroup;
 			children = (
+				CCC913D615CBFDD9002CE59E /* MapKit.framework */,
 				CCC9138715CBDB75002CE59E /* MapPlugin */,
 				CCC9136C15CBDB75002CE59E /* Frameworks */,
 				CCC9136A15CBDB75002CE59E /* Products */,
@@ -151,6 +171,7 @@
 		CCC9138715CBDB75002CE59E /* MapPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				CCC913C415CBDBCF002CE59E /* www */,
 				CCC9139015CBDB75002CE59E /* Cordova.framework */,
 				CCC9139215CBDB75002CE59E /* Resources */,
 				CCC913B315CBDB75002CE59E /* Classes */,
@@ -254,6 +275,15 @@
 			isa = PBXGroup;
 			children = (
 				CCC913BD15CBDB76002CE59E /* README */,
+				CCC913CB15CBFC6A002CE59E /* ViewController.h */,
+				CCC913CC15CBFC6A002CE59E /* ViewController.m */,
+				CCC913CD15CBFC6A002CE59E /* MyLocation.h */,
+				CCC913CE15CBFC6A002CE59E /* MyLocation.m */,
+				CCC913CF15CBFC6A002CE59E /* Waypoint.h */,
+				CCC913D015CBFC6A002CE59E /* Waypoint.m */,
+				CCC913C615CBDC2D002CE59E /* MapPlugin.h */,
+				CCC913C715CBDC2D002CE59E /* MapPlugin.m */,
+				CCD921A215CF99C100AB702B /* MapView.xib */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -328,6 +358,8 @@
 				CCC913B015CBDB75002CE59E /* Capture.bundle in Resources */,
 				CCC913B215CBDB75002CE59E /* Cordova.plist in Resources */,
 				CCC913BB15CBDB76002CE59E /* MainViewController.xib in Resources */,
+				CCC913C515CBDBCF002CE59E /* www in Resources */,
+				CCD921A315CF99C100AB702B /* MapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +389,10 @@
 				CCC9138E15CBDB75002CE59E /* main.m in Sources */,
 				CCC913B615CBDB75002CE59E /* AppDelegate.m in Sources */,
 				CCC913B915CBDB76002CE59E /* MainViewController.m in Sources */,
+				CCC913C815CBDC2D002CE59E /* MapPlugin.m in Sources */,
+				CCC913D315CBFC6A002CE59E /* ViewController.m in Sources */,
+				CCC913D415CBFC6A002CE59E /* MyLocation.m in Sources */,
+				CCC913D515CBFC6A002CE59E /* Waypoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +575,7 @@
 				CCC913C315CBDB76002CE59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

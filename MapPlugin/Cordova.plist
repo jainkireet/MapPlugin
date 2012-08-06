@@ -21,7 +21,9 @@
 	<key>OpenAllWhitelistURLsInWebView</key>
 	<false/>
 	<key>ExternalHosts</key>
-	<array/>
+	<array>
+		<string>*</string>
+	</array>
 	<key>Plugins</key>
 	<dict>
 		<key>Logger</key>
@@ -54,6 +56,8 @@
 		<string>CDVSplashScreen</string>
 		<key>Battery</key>
 		<string>CDVBattery</string>
+		<key>MapPlugin</key>
+		<string>MapPlugin</string>
 	</dict>
 </dict>
 </plist>
